@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Elegante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Texto branco para contraste com o fundo preto */
+    line-height: 1.6;
+    background: #000; /* Fundo preto */
+}
+
+header {
+    background: linear-gradient(45deg, #2e003e, #1a0033, #003d3a, #002f4c); /* Gradiente escuro com roxo e azul escuro */
+    color: #fff; /* Texto branco */
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 5px solid #4a148c; /* Linha roxa escura para destaque */
+    background-size: 600% 600%; /* Tamanho do gradiente para animação */
+    animation: gradientAnimation 10s ease infinite; /* Animação de gradiente */
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.info, .registration {
+    padding: 2rem;
+    background: linear-gradient(45deg, #2e003e, #004d40); /* Gradiente escuro com roxo e verde escuro */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Sombra mais forte */
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.info::before, .registration::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0) 70%);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.info h2, .registration h2 {
+    color: #fff; /* Texto branco */
+    border-bottom: 2px solid #004d40; /* Linha verde escura para destaque */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    line-height: 1.8;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    color: #fff; /* Texto branco */
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #fff; /* Borda branca para contraste */
+    border-radius: 4px;
+    background: #222; /* Fundo cinza escuro para os campos */
+    color: #fff; /* Texto branco */
+}
+
+button {
+    background: linear-gradient(45deg, #2e003e, #004d40); /* Gradiente escuro com roxo e verde escuro */
+    color: #fff; /* Texto branco */
+    border:
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Workshop de Design Moderno</h1>
+            <p>Transforme suas habilidades com nosso workshop exclusivo.</p>
+        </div>
+    </header>
+
+    <section class="info">
+        <div class="container">
+            <h2>Sobre o Workshop</h2>
+            <p>Aprenda com especialistas da indústria e desenvolva habilidades práticas para criar designs impactantes e eficazes.</p>
+            <ul>
+                <li><strong>Data:</strong> 15 de Agosto de 2024</li>
+                <li><strong>Hora:</strong> 10:00 - 17:00</li>
+                <li><strong>Local:</strong> Centro de Convenções de São Paulo</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="registration">
+        <div class="container">
+            <h2>Inscreva-se Agora</h2>
+            <form action="#">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <button type="submit">Enviar Inscrição</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Workshop Elegante. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
